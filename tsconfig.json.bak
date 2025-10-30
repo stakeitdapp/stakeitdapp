@@ -2,12 +2,11 @@
   "compilerOptions": {
     /* Base Options */
     "target": "ES2022",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
 
     /* Path Resolution */
     "baseUrl": ".",
@@ -15,7 +14,6 @@
       "@/*": ["./src/*"]
     },
     "rootDir": ".",
-    "outDir": "dist",
 
     /* Type Checking */
     "strict": true,
@@ -24,15 +22,10 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
 
-    /* Build Options */
+    /* Other */
     "allowJs": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "sourceMap": true,
-
-    /* React Specific */
     "jsx": "react-jsx"
   },
   "include": [

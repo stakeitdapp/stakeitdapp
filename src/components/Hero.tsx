@@ -44,7 +44,18 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in">
-            <Link to="/create-goal">
+            <Link
+              smooth
+              to="/create-goal"
+              scroll={(el) => {
+                const navHeight = 64;
+                const y =
+                  el.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  navHeight;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }}
+            >
               <Button
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 hover:border-2 hover:border-background/40 font-semibold gap-2 group"

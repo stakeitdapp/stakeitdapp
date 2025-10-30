@@ -9,22 +9,26 @@ const steps = [
   {
     icon: Target,
     title: "Stake & Commit",
-    description: "Choose your goal category and stake 1-100 HBAR for 7-30 days.",
+    description:
+      "Choose your goal category and stake 1-100 HBAR for 7-30 days.",
   },
   {
     icon: Video,
     title: "Submit Daily Proof",
-    description: "Upload video evidence of your progress every day (up to 2 minutes).",
+    description:
+      "Upload video evidence of your progress every day (up to 2 minutes).",
   },
   {
     icon: Vote,
     title: "Community Votes",
-    description: "The community verifies your proof via Hedera Consensus Service.",
+    description:
+      "The community verifies your proof via Hedera Consensus Service.",
   },
   {
     icon: Award,
     title: "Complete & Earn",
-    description: "Get your stake back + 50 points. Voters earn 10 points per vote.",
+    description:
+      "Get your stake back + 50 points. Voters earn 10 points per vote.",
   },
   {
     icon: Heart,
@@ -35,7 +39,10 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-primary/5 to-secondary/5">
+    <section
+      id="how-it-works"
+      className="py-24 bg-gradient-to-b from-primary/5 to-secondary/5"
+    >
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-4">
@@ -62,10 +69,12 @@ const HowItWorks = () => {
                       <Icon className="w-6 h-6" />
                     </div>
                     <span className="font-heading font-bold text-3xl text-accent/30">
-                      {String(index + 1).padStart(2, '0')}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <h3 className="font-heading font-semibold text-xl mb-3">{step.title}</h3>
+                  <h3 className="font-heading font-semibold text-xl mb-3">
+                    {step.title}
+                  </h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
               </div>
@@ -75,28 +84,38 @@ const HowItWorks = () => {
 
         <div className="mt-16 max-w-3xl mx-auto bg-card rounded-2xl p-8 border-2 border-accent/30">
           <h3 className="font-heading font-bold text-2xl mb-4 text-center">
-            Penalty Structure: <span className="text-accent">Real Consequences</span>
+            Penalty Structure:{" "}
+            <span className="text-accent">Real Consequences</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <div>
-              <div className="text-3xl font-heading font-bold text-destructive mb-2">25%</div>
+              <div className="text-3xl font-heading font-bold text-destructive mb-2">
+                25%
+              </div>
               <div className="text-sm text-muted-foreground">Total Penalty</div>
             </div>
             <div>
-              <div className="text-3xl font-heading font-bold text-accent mb-2">70%</div>
+              <div className="text-3xl font-heading font-bold text-accent mb-2">
+                70%
+              </div>
               <div className="text-sm text-muted-foreground">To Charity</div>
             </div>
             <div>
-              <div className="text-3xl font-heading font-bold text-secondary mb-2">20%</div>
+              <div className="text-3xl font-heading font-bold text-secondary mb-2">
+                20%
+              </div>
               <div className="text-sm text-muted-foreground">To Platform</div>
             </div>
             <div>
-              <div className="text-3xl font-heading font-bold text-primary mb-2">10%</div>
+              <div className="text-3xl font-heading font-bold text-primary mb-2">
+                10%
+              </div>
               <div className="text-sm text-muted-foreground">To Liquidity</div>
             </div>
           </div>
           <p className="text-center text-sm text-muted-foreground mt-6">
-            You get 75% of your stake back even if you fail. Your penalties make a real difference.
+            You get 75% of your stake back even if you fail. Your penalties make
+            a real difference.
           </p>
         </div>
       </div>
