@@ -1,73 +1,33 @@
-# Welcome to your Lovable project
+STAKE-IT DECENTRALIZED APPLICATION
 
-## Project info
+A fully decentralized implementation for the StakeIt Web3 accountability platform on Hedera.
 
-**URL**: https://lovable.dev/projects/d6a891c4-a39a-4823-b528-72d67fb07c88
+Architecture Overview
+The StakeIt backend is built on a decentralized architecture using only:
 
-## How can I edit this code?
+Smart Contract: StakeIt.sol - Core staking and voting logic on Hedera
+IPFS Integration: Decentralized proof storage
+HCS Integration: Timestamping service for proof submissions
+Components
+1. Smart Contract (contracts/StakeIt.sol)
+The main Solidity contract deployed on Hedera Smart Contract Service (HSCS):
 
-There are several ways of editing your application.
+Goal Creation: Users stake HBAR on personal goals
+Voting System: Community votes on goal completion daily
+Proof Submission: IPFS hashes for completion evidence
+Finalization: Decentralized goal completion with penalty distribution
+Security: ReentrancyGuard, AccessControl, Pausable functionality
+2. IPFS Integration
+Handles decentralized file storage:
 
-**Use Lovable**
+File Upload: Proof documents and images to IPFS
+Pinata Integration: Reliable pinning service
+Fallback Support: Local IPFS node support
+Metadata Storage: JSON data for additional context
+3. HCS Integration
+Hedera Consensus Service integration:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d6a891c4-a39a-4823-b528-72d67fb07c88) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d6a891c4-a39a-4823-b528-72d67fb07c88) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Topic Creation: Dedicated channels for timestamping
+Message Submission: Immutable proof timestamps
+Verification: Timestamp validation for submitted proofs
+Query Support: Historical timestamp retrieval
