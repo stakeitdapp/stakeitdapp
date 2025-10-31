@@ -7,8 +7,6 @@ import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
 import CreateGoal from "./pages/CreateGoal";
 import NotFound from "./pages/NotFound";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const queryClient = new QueryClient();
 
@@ -27,8 +25,6 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-      <Analytics />
-      <SpeedInsights />
     </TooltipProvider>
   </QueryClientProvider>
 );
