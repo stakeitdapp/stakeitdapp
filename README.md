@@ -169,8 +169,9 @@ Project maintained by:
 
 - Engr. Computer J. (labaski)
 - Adenuga Matthew (CodeLord36)
+- Emmanuel Adeoye (Adeolu5678)
 
-For questions or support, feel free to open an issue or email [your‑contact‑email]
+For questions or support, feel free to open an issue or email [stakeitdapp@gmail.com]
 
 ---
 
