@@ -100,8 +100,8 @@ npm install
 npm run dev
 ```
 
-4. Open your browser to `http://localhost:3000` (or whatever port)
-5. Connect your wallet, stake HBAR, set a goal, submit proofs, etc.
+4. Open your browser to `http://localhost:8080` or visit https://stakeitdapp123.vercel.app
+5. Connect your HASHPACK  wallet, stake $HBAR, set a goal, submit proofs,
 
 ---
 
